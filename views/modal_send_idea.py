@@ -64,7 +64,7 @@ class ModalSendIdea:
                                     "text": "🏵 Другое",
                                     "emoji": True
                                 },
-                                "value": "value-2"
+                                "value": "value-3"
                             }
                         ],
                         "action_id": "static_select-action"
