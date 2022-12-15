@@ -34,7 +34,6 @@ class ModalViewController:
 
     @staticmethod
     def handle_get_scheduled_in_view(ack, body, client, logger):
-        ack('Расписание установлено!')
         value = body['view']['state']['values']
         scheduled_msg = ''
         scheduled_notif = ''

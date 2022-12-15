@@ -67,6 +67,7 @@ def handle_view_events(ack, body, client, logger):
 
 @app.view("set_scheduled")
 def handle_scheduled_view_events(ack, body, client, logger):
+    ack()
     ModalViewController().handle_get_scheduled_in_view(ack, body, client, logger)
 
 
