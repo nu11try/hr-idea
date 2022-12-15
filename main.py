@@ -101,6 +101,7 @@ def open_modal(ack, body, client):
     :param client: параметр библиотеки
     :return: None
     """
+    ack()
     ShortcutController().open_modal_send_idea(ack, body, client)
 
 
@@ -114,6 +115,7 @@ def open_modal(ack, body, client):
     :param client: параметр библиотеки
     :return: None
     """
+    ack()
     user_id = body['user']['id']
     if user_id not in json.loads(os.getenv('ADMINS')):
         try:
